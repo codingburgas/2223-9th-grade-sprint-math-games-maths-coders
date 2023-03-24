@@ -1,6 +1,6 @@
 <h1>Team Maths-coders</h1>
 <p align = "center">
-  <img src = "Logo/logo-team.png" alt = "logo-team" width="550px">
+  <img src = "logo-team.png" alt = "logo-team" width="550px">
 </p>
 
 <hr>
@@ -17,7 +17,7 @@
 
 ## 💻 Description <a name="description"></a>
 
-The task was to make a game for all ages that would appeal to people. The game had to be word games or math games. We tried to do that. In the game you have to guess the word by saying letters. Each unknown letter results in a mistake, cutting off one of the character's limbs.
+The task was to make a math game that would be interesting and appeal to people. We tried to make the game as interesting as possible. The objective of the game is to reach the finish line with your car by answering 10 questions correctly. You have only 60 seconds and you can choose different difficulty levels, which are easy, medium and hard.
 
 ## ⚒️ Built Using <a name="built_using"></a>
 
