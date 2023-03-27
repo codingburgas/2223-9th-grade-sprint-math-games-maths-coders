@@ -37,3 +37,28 @@ string generateQuestion() {
     }
     return question;
 }
+
+// Function to check if the player's answer is correct
+bool checkAnswer(int a, int b, int op, int answer) {
+    if (op == 0) {
+        return (a & b) == answer;
+    }
+    else if (op == 1) {
+        return (a | b) == answer;
+    }
+    else if (op == 2) {
+        return (a ^ b) == answer;
+    }
+    else if (op == 3)
+    {
+        return (a << b) == answer;
+    }
+    else if (op == 4)
+    {
+        return (a >> b) == answer;
+    }
+    else
+    {
+        return false;
+    }
+}
