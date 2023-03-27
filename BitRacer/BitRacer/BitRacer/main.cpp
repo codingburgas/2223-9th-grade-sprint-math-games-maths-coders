@@ -37,4 +37,6 @@ int main() {
         UpperRoad();
         car(score);
         DownRoad();
+        string question = generateQuestion();
+        cout << endl << "Question " << (i + 1) << ": " << question << endl;
 }
