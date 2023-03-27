@@ -1,6 +1,6 @@
 <h1>Team Maths-coders</h1>
 <p align = "center">
-  <img src = "logo-team" alt = "logo-team" width="1000px">
+  <img src = "Images/Logos/team-logo.png" alt = "logo-team">
 </p>
 
 <hr>
