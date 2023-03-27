@@ -128,3 +128,38 @@ void DownRoad()
     }
     cout << "___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________" << endl;
 }
+
+void EndGame(time_t TimeTaken, int score, int choice)
+{
+    int pointsNeeded = 0;
+    switch (choice)
+    {
+    case 1: pointsNeeded = 5; break;
+    case 2: pointsNeeded = 7; break;
+    case 3: pointsNeeded = 10; break;
+    }
+    if (score < pointsNeeded)
+    {
+        cout << setw(118) << "__   __          _" << endl;
+        cout << setw(130) << "\\ \\ / /__ _  _  | |___ ___ ___" << endl;
+        cout << setw(131) << " \\ V / _ \\ || | | / _ (_-</ -_)" << endl;
+        cout << setw(131) << "  |_|\\___/\\_,_| |_\\___/__/\\___|" << endl;
+    }
+    else
+    {
+        cout << setw(125) << "__   __                 _" << endl;
+        cout << setw(129) << "\\ \\ / /__ _  _  __ __ _(_)_ _" << endl;
+        cout << setw(131) << "\\ V / _ \\ || | \\ V  V / | ' \\ " << endl;
+        cout << setw(131) << "|_|\\___/\\_,_|  \\_/\\_/|_|_||_|" << endl;
+    }
+    cout << setw(122) << endl << "Quiz complete!" << endl;
+    cout << endl;
+    if (TimeTaken > 59)
+    {
+        cout << setw(100) << "You scored " << score << " out of " << 10 << " questions in " << TimeTaken / 60 << " minute/s and " << TimeTaken % 60 << " second/s." << endl;;
+    }
+    else
+    {
+        cout << setw(100) << "You scored " << score << " out of " << 10 << " questions in " << TimeTaken << " seconds." << endl;
+    }
+}
