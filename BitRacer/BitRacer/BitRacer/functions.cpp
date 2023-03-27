@@ -93,3 +93,21 @@ void greet()
         cout << endl;
     }
 }
+
+void CheckeredFlag(int choice)
+{
+    int distance = 0;
+    switch (choice)
+    {
+    case 1: distance = 117; break;
+    case 2: distance = 160; break;
+    case 3: distance = 235; break;
+    }
+    cout << setw(distance) << "|>>>>>" << endl;
+    cout << setw(distance) << "|>>>>>" << endl;
+    cout << setw(distance) << "|>>>>>" << endl;
+    cout << setw(distance - 5) << "|" << endl;
+    cout << setw(distance - 5) << "|" << endl;
+    cout << setw(distance - 5) << "|" << endl;
+    cout << setw(distance - 5) << "|" << endl;
+}
