@@ -62,3 +62,19 @@ bool checkAnswer(int a, int b, int op, int answer) {
         return false;
     }
 }
+
+void car(int sc) //gets the score
+{
+    fstream newfile;
+
+    newfile.open("..\\textfile\\car.txt", ios::in); //open a file to perform read operation using file object
+    if (newfile.is_open()) //checking whether the file is open
+    {
+        string tp;
+        while (getline(newfile, tp)) //read data from file object and put it into string.
+        {
+            cout << setw((sc * 20) + tp.length()) << tp << endl; //print the data of the string
+        }
+        newfile.close(); //close the file object.
+    }
+}
