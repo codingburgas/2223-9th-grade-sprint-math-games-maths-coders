@@ -32,4 +32,9 @@ int main() {
 
     for (int i = 0; i < 10; i++) {
         greet();
+        CheckeredFlag(choice);
+        cout << "Your score is: " << score << endl;
+        UpperRoad();
+        car(score);
+        DownRoad();
 }
