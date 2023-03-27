@@ -113,7 +113,7 @@ void DownRoad() //prints the lower part of the road
     cout << "___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________" << endl;
 }
 
-void CheckeredFlag(int choice) // prints and locates a finish flag
+void CheckeredFlag(int choice) // print and positions the finish flag
 {
     int distance = 0;
     switch (choice)
