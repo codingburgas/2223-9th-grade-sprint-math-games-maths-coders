@@ -8,6 +8,23 @@
 
 using namespace std;
 
+
+void greet()
+{
+    cout << setw(121) << "     ____  _ __  ____" << endl;
+    cout << setw(144) << "    / __ )(_) /_/ __ \\____ _________   _____" << endl;
+    cout << setw(144) << "   / __  / / __/ /_/ / __ `/ ___ / _ \\/ ___/" << endl;
+    cout << setw(140) << "  / /_/ / / /_/ _, _/ /_/ / /__ / __ / /" << endl;
+    cout << setw(139) << " /_____/_/\\__/_/ |_|\\__,_/\\___ /\\___/_/" << endl;
+    cout << endl;
+    cout << setw(115) << "You have to answer " << 10 << " questions as fast as you can." << endl;
+    for (int i = 0; i < 7; i++)
+    {
+        cout << endl;
+    }
+}
+
+
 // Function to generate random bitwise operator question
 string generateQuestion() {
     int a = rand() % 10;
@@ -63,7 +80,7 @@ bool checkAnswer(int a, int b, int op, int answer) {
     }
 }
 
-void car(int sc) //gets the score
+void car(int sc) //print and moves the car by getting the score
 {
     fstream newfile;
 
@@ -79,22 +96,24 @@ void car(int sc) //gets the score
     }
 }
 
-void greet()
+void UpperRoad() //prints the upper part of the road
 {
-    cout << setw(121) << "     ____  _ __  ____" << endl;
-    cout << setw(144) << "    / __ )(_) /_/ __ \\____ _________   _____" << endl;
-    cout << setw(144) << "   / __  / / __/ /_/ / __ `/ ___ / _ \\/ ___/" << endl;
-    cout << setw(140) << "  / /_/ / / /_/ _, _/ /_/ / /__ / __ / /" << endl;
-    cout << setw(139) << " /_____/_/\\__/_/ |_|\\__,_/\\___ /\\___/_/" << endl;
+    cout << "___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________";
     cout << endl;
-    cout << setw(115) << "You have to answer " << 10 << " questions as fast as you can." << endl;
+}
+
+void DownRoad() //prints the lower part of the road
+{
+    cout << endl;
+    cout << "-----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     ---     ";
     for (int i = 0; i < 7; i++)
     {
         cout << endl;
     }
+    cout << "___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________" << endl;
 }
 
-void CheckeredFlag(int choice)
+void CheckeredFlag(int choice) // prints and locates a finish flag
 {
     int distance = 0;
     switch (choice)
@@ -112,24 +131,8 @@ void CheckeredFlag(int choice)
     cout << setw(distance - 5) << "|" << endl;
 }
 
-void UpperRoad()
-{
-    cout << "___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________";
-    cout << endl;
-}
 
-void DownRoad()
-{
-    cout << endl;
-    cout << "-----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     -----     ---     ";
-    for (int i = 0; i < 7; i++)
-    {
-        cout << endl;
-    }
-    cout << "___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________" << endl;
-}
-
-void EndGame(time_t TimeTaken, int score, int choice)
+void EndGame(time_t TimeTaken, int score, int choice) // Shows your stats and tells you if you won or not
 {
     int pointsNeeded = 0;
     switch (choice)
