@@ -21,5 +21,15 @@ int main() {
     cin >> choice;
     system("cls");
 
+    srand(time(NULL));
+    int score = 0;
+    time_t startTime = time(NULL);
+    time_t currentTime = time(NULL); // gets the current time
 
+
+
+
+
+    for (int i = 0; i < 10; i++) {
+        greet();
 }
