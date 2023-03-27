@@ -78,4 +78,31 @@ int main() {
                 b = stoi(question.substr(4, 1));
             }
         }
+
+
+        int answer;
+        cout << "Enter your answer: ";
+        if (cin >> answer) {
+            if (checkAnswer(a, b, op, answer)) {
+                score++;
+                cout << "Correct!" << endl;
+            }
+            else {
+                cout << "Incorrect!" << endl;
+            }
+        }
+        else {
+            // Clear the failbit flag and ignore the input buffer
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Invalid input. Please enter an integer value." << endl;
+            i--;
+        }
+        system("cls");
+    }
+
+    currentTime = time(NULL);
+    EndGame(difftime(currentTime, startTime), score, choice);
+
+    return 0;
 }
